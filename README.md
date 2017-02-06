@@ -1,6 +1,3 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" width="154" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="154" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h71v20H0z"/><path fill="#a4a61d" d="M71 0h83v20H71z"/><path fill="url(#b)" d="M0 0h154v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11"><text x="35.5" y="15" fill="#010101" fill-opacity=".3">black-pony</text><text x="35.5" y="14">black-pony</text><text x="111.5" y="15" fill="#010101" fill-opacity=".3">silver badges</text><text x="111.5" y="14">silver badges</text></g></svg>
-
 >建议学习时间：1天以上时间
 >建议在学习完es6语法之后，把这个项目自己用es6进行改造
 
@@ -50,6 +47,7 @@ GET /remove
 ## 编辑页面、添加页面添加动态数据 --> step_4
 
 ## 用MVC重构代码(结合音乐项目架构分析.xls和MVC模型.png)
+- video
 1. 当用户在地址栏输入网址按下回车的时候
 2. 进入`路由`判断
 3. 找到对应的`控制器`
@@ -67,8 +65,11 @@ GET /remove
 - video
 
 ## 添加歌曲
+- 前置知识：step_9 --> 用postman测试
 - video
-- 如何使用formidable第三方包(难点)
+    + 用流的方式接收表单提交的数据 --> step_10
+    + 使用querystring来将请求的url的参数转换成对象.js
+    + 如何使用formidable第三方包(难点)接收提交的表单数据 --> step_11
 
 ## 编辑歌曲
 - video

@@ -67,7 +67,7 @@ var musicList = [
 var server = http.createServer();
 server.on('request',function(req,res){
     req.url = decodeURI(req.url);
-    if(req.url === '/'){
+    if(req.url === '/' && req.method === 'GET'){
         res.writeHead(200,{'Content-Type':'text/html;charset=utf8'});
         var data = {musicList:musicList,title:'首页'};
         var html = template(__dirname+'/views/index',data);

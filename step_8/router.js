@@ -11,11 +11,11 @@ var musicController = require('./controllers/music');
 
 module.exports = function(req,res){
     req.url = decodeURI(req.url);
-    if(req.url === '/'){
+    if(req.url === '/' && req.method === 'GET'){
         indexController.showIndex(req,res);
-    }else if(req.url === '/add'){
+    }else if(req.url === '/add' && req.method === 'GET'){
         musicController.showAdd(req,res);
-    }else if(req.url === '/edit'){
+    }else if(req.url === '/edit' && req.method === 'GET'){
         musicController.showEdit(req,res);
     }else if((req.url.indexOf('/node_modules') === 0) || (req.url.indexOf('/uploads') === 0)){
         fs.readFile(path.join(__dirname,req.url),function(err,data){

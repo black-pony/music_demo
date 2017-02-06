@@ -67,19 +67,19 @@ var musicList = [
 var server = http.createServer();
 server.on('request',function(req,res){
     req.url = decodeURI(req.url);
-    if(req.url === '/'){
+    if(req.url === '/' && req.method === 'GET'){
         res.writeHead(200,{'Content-Type':'text/html;charset=utf8'});
         var data = {musicList:musicList,title:'首页'};
         var html = template(__dirname+'/views/index',data);
         res.write(html);
         res.end();
-    }else if(req.url === '/add'){
+    }else if(req.url === '/add' && req.method === 'GET'){
         res.writeHead(200,{'Content-Type':'text/html;charset=utf8'});
         var data = {title:'添加音乐'};
         var html = template(__dirname+'/views/add',data);
         res.write(html);
         res.end();
-    }else if(req.url === '/edit'){
+    }else if(req.url === '/edit' && req.method === 'GET'){
         res.writeHead(200,{'Content-Type':'text/html;charset=utf8'});
         var data = {title:'编辑音乐'};
         var html = template(__dirname+'/views/edit',data);
