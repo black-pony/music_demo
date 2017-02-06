@@ -66,12 +66,12 @@ GET /remove
 
 ## 添加歌曲
 - 前置知识：step_9 --> 用postman测试
-- video
+- video1 + video2
     + 用流的方式接收表单提交的数据 --> step_10
     + 使用querystring来将请求的url的参数转换成对象.js
     + 如何使用formidable第三方包(难点)接收提交的表单数据 --> step_11
 
-## 编辑歌曲
+## 编辑歌曲 --> step_12
 - video
 
 ## 删除歌曲
