@@ -1,3 +1,21 @@
+
+                          +                     +
+                          |                            +------+
+                          |    +---------+      +      |
+                          |    |         |      |      |
+X     +  +------+  +------+    |         |      |      |
+|X    |  |      |  |      |    |         |      |      +------+
+| X   |  |      |  |      |    +---------+      |             |
+|  X  |  |      |  |      |    |                |             |
+|   X |  |      |  |      |    |                |             |
+|    X|  |      |  |      |    |                |             |
++     +  +------+  +------+    +---------+      |       +-----+
+                                                |
+                                                |
+                                          +-----+
+<img src="https://img.shields.io/badge/black--pony-silver%20badges-yellowgreen.svg">
+![测试](https://img.shields.io/badge/black--pony-silver%20badges-yellowgreen.svg)
+
 >建议学习时间：1天以上时间
 >建议在学习完es6语法之后，把这个项目自己用es6进行改造
 

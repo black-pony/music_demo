@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="请输入用户名" id="myName">
+    <input type="button" id="add" value="添加用户名">
+    <input type="button" id="showAll" value="打印所有的用户名">
+    <script>
+        //使用匿名函数自执行的方法 
+        (function(exports){
+            var userList = [];
+            //构造器
+            function User(name){
+                this.name = name;
+            }
+            //这个是放在原型身上的行为方法
+            User.prototype.save = function(){
+                var id = userList.length;
+                userList.push({id:id,name:myName.value});
+            };
+            //这个叫静态方法
+            User.showAll = function(){
+                userList.forEach(function(value,index){
+                    console.log(value.name);
+                })
+            };
+            exports.User = User;
+        })(window);
+    
+        function $(str){
+            return document.querySelector(str);
+        }
+        document.addEventListener('DOMContentLoaded',function(){
+            var myName  = $('#myName'),
+                add     = $('#add'),
+                showAll = $('#showAll');
+            
+            add.addEventListener('click',function(){
+                var user = new User(myName.value);
+                user.save();
+            },false);
+
+            showAll.addEventListener('click',function(){
+                User.showAll();
+            },false);    
+        },false);
+    </script>
+</body>
+</html>

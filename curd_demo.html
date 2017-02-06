@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="请输入用户名" id="myName">
+    <input type="button" id="add" value="添加用户名">
+    <input type="button" id="showAll" value="打印所有的用户名">
+    <script>
+        //如下的代码的缺点：数据操作逻辑散落在DOM操作的各个地方，没有集中管理，而且都是面向过程的写法，代码阅读起来不太优雅
+        var userList = [];
+        function $(str){
+            return document.querySelector(str);
+        }
+        document.addEventListener('DOMContentLoaded',function(){
+            var myName  = $('#myName'),
+                add     = $('#add'),
+                showAll = $('#showAll');
+            
+            add.addEventListener('click',function(){
+                var id = userList.length;
+                userList.push({id:id,name:myName.value});
+            },false);
+
+            showAll.addEventListener('click',function(){
+                userList.forEach(function(value,index){
+                    console.log(value.name);
+                })
+            },false);    
+        },false);
+    </script>
+</body>
+</html>
