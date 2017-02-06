@@ -28,22 +28,22 @@ GET /remove
 - 执行`npm install --save bootstrap`
 - 创建app.js
 
-## 创建服务器 --> music_01
+## 创建服务器 --> step_1
 - config.js
 
-## 首页渲染 --> music_02
+## 首页渲染 --> step_2
 - 首页相关的路由
 - 静态资源相关的路由 ---> mime第三方模块获取当前静态资源的Content-Type
 
-## 首页添加动态数据 --> music_03
+## 首页添加动态数据 --> step_3
 - 添加动态数据的两种方式
     + ajax --> 通过ajax从后台获取json数据 --> art-template模板引擎渲染 --> 追加到DOM树上
     + node.js把数据获取，直接通过art-template渲染出来 --> 通过response响应的对象返回给我们的浏览器
 - art-template在Node.js当中的用法
 
-## 编辑页面、添加页面添加动态数据 --> music_05
+## 编辑页面、添加页面添加动态数据 --> step_4
 
-## 用MVC重构代码(结合excel中的图和jpeg图)
+## 用MVC重构代码(结合音乐项目架构分析.xls和MVC模型.png)
 1. 当用户在地址栏输入网址按下回车的时候
 2. 进入`路由`判断
 3. 找到对应的`控制器`
