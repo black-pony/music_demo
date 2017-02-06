@@ -65,7 +65,7 @@ GET /remove
 
 ## 添加歌曲
 - video
-- 如何使用formidable第三方包
+- 如何使用formidable第三方包(难点)
 
 ## 编辑歌曲
 - video
