@@ -73,13 +73,13 @@ module.exports = function(req,res){
         res.end();
     }else if(req.url === '/add'){
         res.writeHead(200,{'Content-Type':'text/html;charset=utf8'});
-        var data = {musicList:musicList,title:'添加音乐'};
+        var data = {title:'添加音乐'};
         var html = template(__dirname+'/views/add',data);
         res.write(html);
         res.end();
     }else if(req.url === '/edit'){
         res.writeHead(200,{'Content-Type':'text/html;charset=utf8'});
-        var data = {musicList:musicList,title:'编辑音乐'};
+        var data = {title:'编辑音乐'};
         var html = template(__dirname+'/views/edit',data);
         res.write(html);
         res.end();
