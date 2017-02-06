@@ -1,20 +1,5 @@
 
-                          +                     +
-                          |                            +------+
-                          |    +---------+      +      |
-                          |    |         |      |      |
-X     +  +------+  +------+    |         |      |      |
-|X    |  |      |  |      |    |         |      |      +------+
-| X   |  |      |  |      |    +---------+      |             |
-|  X  |  |      |  |      |    |                |             |
-|   X |  |      |  |      |    |                |             |
-|    X|  |      |  |      |    |                |             |
-+     +  +------+  +------+    +---------+      |       +-----+
-                                                |
-                                                |
-                                          +-----+
-<img src="https://img.shields.io/badge/black--pony-silver%20badges-yellowgreen.svg">
-![测试](https://img.shields.io/badge/black--pony-silver%20badges-yellowgreen.svg)
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="154" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h71v20H0z"/><path fill="#a4a61d" d="M71 0h83v20H71z"/><path fill="url(#b)" d="M0 0h154v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11"><text x="35.5" y="15" fill="#010101" fill-opacity=".3">black-pony</text><text x="35.5" y="14">black-pony</text><text x="111.5" y="15" fill="#010101" fill-opacity=".3">silver badges</text><text x="111.5" y="14">silver badges</text></g></svg>
 
 >建议学习时间：1天以上时间
 >建议在学习完es6语法之后，把这个项目自己用es6进行改造
