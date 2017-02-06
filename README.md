@@ -71,8 +71,10 @@ GET /remove
     + 使用querystring来将请求的url的参数转换成对象.js
     + 如何使用formidable第三方包(难点)接收提交的表单数据 --> step_11
 
-## 编辑歌曲 --> step_12
-- video
+## 编辑歌曲
+- video1 --> 编辑数据显示 --> step_12
+- video2 --> 编辑操作完成 
+                --> 流的方式 --> step_13
 
 ## 删除歌曲
 - video

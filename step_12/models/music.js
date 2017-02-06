@@ -22,7 +22,7 @@ function Music(music) {
 
 // 获取所有的音乐列表信息
 Music.getAll = function() {
-  console.log(musicList);
+  // console.log(musicList);
   return musicList
 }
 
