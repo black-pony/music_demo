@@ -77,7 +77,7 @@ GET /remove
                 --> 流的方式 --> step_13
 
 ## 删除歌曲
-- video
+- video --> step_14
 
 
 
